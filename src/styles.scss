@@ -1,0 +1,52 @@
+.sentences,
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+.sentences {
+  flex-direction: column;
+}
+.buttons {
+  flex-direction: row;
+}
+
+.buttons {
+  margin: 2rem 1rem 0 0;
+
+  &.highlighted {
+    button {
+      border-color: blue !important;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  button {
+    border: 2px solid lightgray;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgba(0, 128, 0, 0.5) !important;
+    }
+
+    &.copy.content.selected {
+      border-color: green !important;
+    }
+  }
+}
